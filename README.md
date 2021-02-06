@@ -80,14 +80,14 @@ What works and not?
   #. If hardware: buy a more expensive like PN532 (supports NFC and many more, but costs about $15 and not usable with this library).
 
 
-#Compatible IDE
+Compatible IDE
 ----------
 This library works with Arduino IDE 1.6, older versions are **not supported** and will cause compiler errors. The built-in library manager is supported.
 
 If you use your own compiler, you have to enable ``c++11``-support.
 
 
-#Compatible boards
+Compatible boards
 ----------
 
 **!!!Only for advanced users!!!**
@@ -103,7 +103,7 @@ Some user made some patches/suggestions/ports for other boards:
 
 Note that the main target/support of library is still Arduino.
 
-#Support/issue
+Support/issue
 ----------
 1. First checkout `what works and not`_ and `troubleshooting`_ .
 
@@ -161,10 +161,10 @@ The following table shows the typical pin layout used:
 | SPI SCK   | D5            | ICSP3   |
 +-----------+---------------+---------+
 
-.. [1] Configurable, typically defined as RST_PIN in sketch/program.
-.. [2] Configurable, typically defined as SS_PIN in sketch/program.
-.. [3] The SDA pin might be labeled SS on some/older MFRC522 boards. 
-.. [4] Source: https://github.com/miguelbalboa/rfid/issues/111#issuecomment-420433658 .
+[1] Configurable, typically defined as RST_PIN in sketch/program.
+[2] Configurable, typically defined as SS_PIN in sketch/program.
+[3] The SDA pin might be labeled SS on some/older MFRC522 boards. 
+[4] Source: https://github.com/miguelbalboa/rfid/issues/111#issuecomment-420433658 .
 
 Important: If your micro controller supports multiple SPI interfaces, the library only uses the **default (first) SPI** of the Arduino framework.
 
