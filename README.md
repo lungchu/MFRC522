@@ -19,7 +19,7 @@ on your Arduino using a RC522 based reader connected via the Serial Peripheral
 Interface (SPI) interface.
 
 
-#Development
+Development
 ----------
 
 **The development by owner miguelbalboa has ended**.
@@ -35,7 +35,7 @@ This library has a long history and is used in many projects. These projects oft
 
 
 
-#Before buy
+Before buy
 ----------
 Please notice that there are many sellers (ebay, aliexpress, ..) who sell mfrc522 boards. **The quality of these boards are extremely different.** Some are soldered with wrong/low quality capacitors or fake/defect mfrc522.
 
@@ -44,7 +44,7 @@ Please notice that there are many sellers (ebay, aliexpress, ..) who sell mfrc52
 If you got a bad board and you can tell us how to detect those boards (silk, chip description, ..), please share your knowledge.
 
 
-#What works and not?
+What works and not?
 ----------
 
 * **Works**
@@ -65,9 +65,9 @@ If you got a bad board and you can tell us how to detect those boards (silk, chi
   
   #. MIFARE DESFire, MIFARE DESFire EV1/EV2, not supported by software.
   #. Communication with 3DES or AES, not supported by software.
-  #. Peer-to-peer (ISO/IEC 18092), not `supported by hardware`_.
-  #. Communication with smart phone, not `supported by hardware`_.
-  #. Card emulation, not `supported by hardware`_.
+  #. Peer-to-peer (ISO/IEC 18092), not  [supported by hardware][_supported by hardware].
+  #. Communication with smart phone, not  [supported by hardware][_supported by hardware].
+  #. Card emulation, not [supported by hardware][_supported by hardware].
   #. Use of IRQ pin. But there is a proof-of-concept example.
   #. With Intel Galileo (Gen2) see `#310 <https://github.com/miguelbalboa/rfid/issues/310>`__, not supported by software.
   #. Power reduction modes `#269 <https://github.com/miguelbalboa/rfid/issues/269>`_, not supported by software.
@@ -354,7 +354,6 @@ Maintained by Rotzbua from 2016 until 2020.
 [_arduino]: https://arduino.cc/
 [_ebay]: https://www.ebay.com/
 [_iso/iec 14443a]: https://en.wikipedia.org/wiki/ISO/IEC_14443
-[_iso/iec 14443-3]:2011 part 3: 
 [_nxp mfrc522]: https://www.nxp.com/documents/data_sheet/MFRC522.pdf
 [_broken]: https://eprint.iacr.org/2008/166
 [_supported by hardware]: https://web.archive.org/web/20151210045625/http://www.nxp.com/documents/leaflet/939775017564.pdf
