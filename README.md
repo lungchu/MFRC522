@@ -19,8 +19,7 @@ on your Arduino using a RC522 based reader connected via the Serial Peripheral
 Interface (SPI) interface.
 
 
-.. _development:
-Development
+#Development
 ----------
 
 **The development by owner miguelbalboa has ended**.
@@ -35,8 +34,8 @@ Development
 This library has a long history and is used in many projects. These projects often do not document what version they use. Committing changes might break those old projects and lead to bad experiences (for beginners) and support requests. For these reasons the library is in freeze mode. You can still commit typo, documentation or bug fixes.
 
 
-.. _before buy:
-Before buy
+
+#Before buy
 ----------
 Please notice that there are many sellers (ebay, aliexpress, ..) who sell mfrc522 boards. **The quality of these boards are extremely different.** Some are soldered with wrong/low quality capacitors or fake/defect mfrc522.
 
@@ -45,8 +44,7 @@ Please notice that there are many sellers (ebay, aliexpress, ..) who sell mfrc52
 If you got a bad board and you can tell us how to detect those boards (silk, chip description, ..), please share your knowledge.
 
 
-.. _what works and not:
-What works and not?
+#What works and not?
 ----------
 
 * **Works**
@@ -82,16 +80,14 @@ What works and not?
   #. If hardware: buy a more expensive like PN532 (supports NFC and many more, but costs about $15 and not usable with this library).
 
 
-.. _compatible ide:
-Compatible IDE
+#Compatible IDE
 ----------
 This library works with Arduino IDE 1.6, older versions are **not supported** and will cause compiler errors. The built-in library manager is supported.
 
 If you use your own compiler, you have to enable ``c++11``-support.
 
 
-.. _compatible boards:
-Compatible boards
+#Compatible boards
 ----------
 
 **!!!Only for advanced users!!!**
@@ -107,8 +103,7 @@ Some user made some patches/suggestions/ports for other boards:
 
 Note that the main target/support of library is still Arduino.
 
-.. _support issue:
-Support/issue
+#Support/issue
 ----------
 1. First checkout `what works and not`_ and `troubleshooting`_ .
 
@@ -119,15 +114,13 @@ Support/issue
     Open an issue on Github.
 
 
-.. _code style:
-Code style
+#Code style
 ----------
 
 Please use ``fixed integers``, see `stdint.h`_. Why? This library is compatible with different boards which use different architectures (16bit and 32bit.) Unfixed ``int`` variables have different sizes in different environments and may cause unpredictable behaviour.
 
 
-.. _pin layout:
-Pin Layout
+#Pin Layout
 ----------
 
 The following table shows the typical pin layout used:
@@ -175,8 +168,7 @@ The following table shows the typical pin layout used:
 
 Important: If your micro controller supports multiple SPI interfaces, the library only uses the **default (first) SPI** of the Arduino framework.
 
-.. _hardware:
-Hardware
+#Hardware
 --------
 
 There are three hardware components involved:
@@ -207,8 +199,7 @@ There are three hardware components involved:
 * One or two might be included with the Reader or *"starter kit"* already.
 
 
-.. _protocol:
-Protocols
+#Protocols
 ---------
 
 1. The micro controller and the reader use SPI for communication.
@@ -229,8 +220,7 @@ Protocols
   * The reader does not support ISO/IEC 14443-3 Type B.
 
 
-.. _security:
-Security
+#Security
 -------
 * The **UID** of a card **can not be used** as an unique identification for security related projects. Some Chinese cards allow to change the UID which means you can easily clone a card. For projects like *access control*, *door opener* or *payment systems* you **must implement** an **additional security mechanism** like a password or normal key.
 
@@ -239,8 +229,7 @@ Security
 * This library does not offer 3DES or AES authentication used by cards like the Mifare DESFire, it may be possible to be implemented because the datasheet says there is support. We hope for pull requests :).
 
 
-.. _troubleshooting:
-Troubleshooting
+#Troubleshooting
 -------
 
 * **I don't get input from reader** or **WARNING: Communication failure, is the MFRC522 properly connected?**
@@ -299,8 +288,7 @@ Troubleshooting
   #. If hardware: buy a more expensive chip like the PN532 (supports NFC and many more, but costs about $15)
 
 
-.. _license:
-License
+#License
 -------
 This is free and unencumbered software released into the public domain.
 
@@ -328,8 +316,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to https://unlicense.org/
 
 
-.. _dependency:
-Dependency
+#Dependency
 ----------
 
 * **Arduino.h**
@@ -348,7 +335,7 @@ Dependency
   * License: different
 
 
-History
+#History
 -------
 
 The MFRC522 library was first created in Jan 2012 by Miguel Balboa (from
