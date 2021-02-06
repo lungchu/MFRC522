@@ -5,7 +5,6 @@
  * This is a MFRC522 library example; for further details and other examples see: https://github.com/miguelbalboa/rfid
  * 
  * This sample shows how to set the UID on a UID changeable MIFARE card.
- * NOTE: for more informations read the README.rst
  * 
  * @author Tom Clement
  * @license Released into the public domain.
@@ -61,7 +60,7 @@ void setup() {
 // But of course this is a more proper approach
 void loop() {
   
-  // Look for new cards, and select one if present
+  // Reset the loop if no new card present on the sensor/reader. This saves the entire process when idle. And if present, select one.
   if ( ! mfrc522.PICC_IsNewCardPresent() || ! mfrc522.PICC_ReadCardSerial() ) {
     delay(50);
     return;
