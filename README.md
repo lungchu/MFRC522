@@ -6,15 +6,11 @@ Making MFRC522 also support Linkit 7697 chip
 - This project is remodified from the original [MFRC522](https://github.com/miguelbalboa/rfid), therefore it also supports all chips supported by the origanal one.
 
 # MFRC522
-![Build Status](https://img.shields.io/maintenance/no/2019.svg)(https://github.com/miguelbalboa/rfid/workflows/PlatformIO%20CI/badge.svg)(https://github.com/miguelbalboa/rfid/actions)
-   (alt: GitHub Actions)
+![Build Status](https://img.shields.io/maintenance/no/2019.svg)
+(https://github.com/miguelbalboa/rfid/workflows/PlatformIO%20CI/badge.svg)
 (https://img.shields.io/badge/C%2B%2B-11-brightgreen.svg)
-    (target: `compatible ide`_)
 (https://img.shields.io/github/release/miguelbalboa/rfid.svg?colorB=green)
-    (https://github.com/miguelbalboa/rfid/releases)
-    (alt: Releases)
 (https://img.shields.io/badge/ArduinoIDE-%3E%3D1.6.10-lightgrey.svg)
-    (arget: `compatible ide`_)
 
 Arduino library for MFRC522 and other RFID RC522 based modules.
 
