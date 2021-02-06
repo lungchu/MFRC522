@@ -6,7 +6,7 @@ Making MFRC522 also support Linkit 7697 chip
 - This project is remodified from the original [MFRC522](https://github.com/miguelbalboa/rfid), therefore it also supports all chips supported by the origanal one.
 
 # MFRC522
-[![Build Status](https://img.shields.io/maintenance/no/2019.svg)(https://github.com/miguelbalboa/rfid/workflows/PlatformIO%20CI/badge.svg)(https://github.com/miguelbalboa/rfid/actions)
+![Build Status](https://img.shields.io/maintenance/no/2019.svg)(https://github.com/miguelbalboa/rfid/workflows/PlatformIO%20CI/badge.svg)(https://github.com/miguelbalboa/rfid/actions)
    (alt: GitHub Actions)
 (https://img.shields.io/badge/C%2B%2B-11-brightgreen.svg)
     (target: `compatible ide`_)
