@@ -114,13 +114,13 @@ Note that the main target/support of library is still Arduino.
     Open an issue on Github.
 
 
-#Code style
+Code style
 ----------
 
-Please use ``fixed integers``, see `stdint.h`_. Why? This library is compatible with different boards which use different architectures (16bit and 32bit.) Unfixed ``int`` variables have different sizes in different environments and may cause unpredictable behaviour.
+Please use ``fixed integers``, see [stdint.h][stdint.h]. Why? This library is compatible with different boards which use different architectures (16bit and 32bit.) Unfixed ``int`` variables have different sizes in different environments and may cause unpredictable behaviour.
 
 
-#Pin Layout
+Pin Layout
 ----------
 
 The following table shows the typical pin layout used:
@@ -168,7 +168,7 @@ The following table shows the typical pin layout used:
 
 Important: If your micro controller supports multiple SPI interfaces, the library only uses the **default (first) SPI** of the Arduino framework.
 
-#Hardware
+Hardware
 --------
 
 There are three hardware components involved:
@@ -199,7 +199,7 @@ There are three hardware components involved:
 * One or two might be included with the Reader or *"starter kit"* already.
 
 
-#Protocols
+Protocols
 ---------
 
 1. The micro controller and the reader use SPI for communication.
@@ -220,7 +220,7 @@ There are three hardware components involved:
   * The reader does not support ISO/IEC 14443-3 Type B.
 
 
-#Security
+Security
 -------
 * The **UID** of a card **can not be used** as an unique identification for security related projects. Some Chinese cards allow to change the UID which means you can easily clone a card. For projects like *access control*, *door opener* or *payment systems* you **must implement** an **additional security mechanism** like a password or normal key.
 
@@ -229,7 +229,7 @@ There are three hardware components involved:
 * This library does not offer 3DES or AES authentication used by cards like the Mifare DESFire, it may be possible to be implemented because the datasheet says there is support. We hope for pull requests :).
 
 
-#Troubleshooting
+Troubleshooting
 -------
 
 * **I don't get input from reader** or **WARNING: Communication failure, is the MFRC522 properly connected?**
@@ -288,7 +288,7 @@ There are three hardware components involved:
   #. If hardware: buy a more expensive chip like the PN532 (supports NFC and many more, but costs about $15)
 
 
-#License
+License
 -------
 This is free and unencumbered software released into the public domain.
 
@@ -316,7 +316,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to https://unlicense.org/
 
 
-#Dependency
+Dependency
 ----------
 
 * **Arduino.h**
@@ -335,7 +335,7 @@ For more information, please refer to https://unlicense.org/
   * License: different
 
 
-#History
+History
 -------
 
 The MFRC522 library was first created in Jan 2012 by Miguel Balboa (from
@@ -352,12 +352,12 @@ Maintained by Rotzbua from 2016 until 2020.
 
 
 [_arduino]: https://arduino.cc/
-.. _ebay: https://www.ebay.com/
-.. _iso/iec 14443a: https://en.wikipedia.org/wiki/ISO/IEC_14443
-.. _iso/iec 14443-3\:2011 part 3: 
-.. _nxp mfrc522: https://www.nxp.com/documents/data_sheet/MFRC522.pdf
-.. _broken: https://eprint.iacr.org/2008/166
-.. _supported by hardware: https://web.archive.org/web/20151210045625/http://www.nxp.com/documents/leaflet/939775017564.pdf
-.. _Arduino forum: https://forum.arduino.cc
-.. _stdint.h: https://en.wikibooks.org/wiki/C_Programming/C_Reference/stdint.h
-.. _Mikro Elektronika: https://forum.mikroe.com/viewtopic.php?f=147&t=64203
+[_ebay]: https://www.ebay.com/
+[_iso/iec 14443a]: https://en.wikipedia.org/wiki/ISO/IEC_14443
+[_iso/iec 14443-3]:2011 part 3: 
+[_nxp mfrc522]: https://www.nxp.com/documents/data_sheet/MFRC522.pdf
+[_broken]: https://eprint.iacr.org/2008/166
+[_supported by hardware]: https://web.archive.org/web/20151210045625/http://www.nxp.com/documents/leaflet/939775017564.pdf
+[_Arduino forum]: https://forum.arduino.cc
+[_stdint.h]: https://en.wikibooks.org/wiki/C_Programming/C_Reference/stdint.h
+[_Mikro Elektronika]: https://forum.mikroe.com/viewtopic.php?f=147&t=64203
